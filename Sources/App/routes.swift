@@ -6,10 +6,10 @@ public func routes(_ router: Router) throws {
     router.get { req in
         return "It works!"
     }
-    
+    let backgroundService = BackgroundService()
     // Basic "Hello, world!" example
     router.get("hello") { req in
-        return "Hello, world!"
+        return backgroundService.voidscrapWebsite("https://www.makemytrip.com/holidays-india/")
     }
 
     // Example of configuring a controller
