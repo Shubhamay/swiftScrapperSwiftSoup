@@ -22,7 +22,7 @@ public class BackgroundService {
         guard let data = data else {
              return
         }
-        let str = String(decoding: data, as: UTF8.self)                
+        let str = String(decoding: data, as: UTF8.self)
         }.resume()
          
         return url1;
