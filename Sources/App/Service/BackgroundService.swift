@@ -4,7 +4,9 @@
 //
 //  Created by shubhamd on 21/04/20.
 //
-
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 import SwiftSoup
 import Foundation
 
